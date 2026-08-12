@@ -1,0 +1,79 @@
+# ==========================================
+# 1. macOS System Files
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Trashes
+.Spotlight-V100
+.AppleDB
+.AppleDesktop
+
+# ==========================================
+# 2. IDEs & Editors
+# ==========================================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+/out/
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ==========================================
+# 3. Spring Boot / Build Tools Output
+# ==========================================
+# Gradle output
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven output
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Logs e arquivos temporários
+*.log
+logs/
+*.tmp
+*.bak
+*.swp
+
+# ==========================================
+# 4. Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# ==========================================
+# 5. Testing & Coverage Reports
+# ==========================================
+.active
+.settings
+bin/
