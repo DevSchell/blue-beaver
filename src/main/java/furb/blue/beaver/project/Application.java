@@ -1,4 +1,4 @@
-package furb.blue.beaver;
+package furb.blue.beaver.project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package furb.blue.beaver;
+package furb.blue.beaver.project.infrastructure.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
