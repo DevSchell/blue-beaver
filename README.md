@@ -38,3 +38,27 @@ Flutter SDK
 Um banco de dados instalado ou rodando via container (a definir)
 
 IDE de sua preferência (VS Code, IntelliJ, Android Studio)
+
+### Lista de API 
+
+#### UserBoardgame
+
+| Método | Rota | Descrição |
+|---|---|---|
+| POST | `/user-boardgames` | Criar uma posse |
+| PUT | `/user-boardgames/{uuid}` | Atualizar posse (completo) |
+| PATCH | `/user-boardgames/{uuid}` | Atualizar posse (parcial) |
+| GET | `/user-boardgames/{uuid}` | Detalhar uma posse específica |
+| GET | `/user-boardgames` | Listar posses (query params: `?userId=&boardgameId=`) |
+| DELETE | `/user-boardgames/{uuid}` | Remover posse |
+
+#### Offer
+| Método | Rota | Descrição |
+|---|---|---|
+| POST | `/offers` | Criar uma oferta (a partir de um `userBoardgameId`) |
+| PUT | `/offers/{uuid}` | Atualizar oferta (completo) |
+| PATCH | `/offers/{uuid}` | Atualizar oferta (parcial, ex: só o preço) |
+| GET | `/offers/{uuid}` | Detalhar uma oferta específica |
+| GET | `/offers` | Listar ofertas (query params: `?userId=&boardgameId=&status=`) |
+| DELETE | `/offers/{uuid}` | Remover oferta |
+ 
