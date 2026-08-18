@@ -1,9 +1,11 @@
-## BoardGame Hub 🎲
+# BoardGame Hub 🎲
+
 Repositório inicial do projeto de gerenciamento e marketplace de jogos de tabuleiro.
 
 A ideia do projeto é criar uma plataforma onde o usuário consiga cadastrar e organizar sua própria coleção de boardgames (CRUD completo) e também navegar por um feed para encontrar jogos que outros usuários estejam vendendo.
 
 ### 📌 Sobre o Projeto
+
 O desenvolvimento está dividido em duas partes principais:
 
 **Backend:** API REST desenvolvida em Spring Boot para gerenciamento de regras de negócio, usuários e persistência dos dados.
@@ -11,6 +13,7 @@ O desenvolvimento está dividido em duas partes principais:
 **Frontend:** Aplicativo em Flutter para oferecer uma interface simples e intuitiva tanto no mobile quanto no desktop/web.
 
 ### 🛠️ Tecnologias Pretendidas
+
 **Backend:** Java, Spring Boot, Spring Data JPA, Banco de Dados Relacional.
 
 **Frontend:** Dart, Flutter.
@@ -18,6 +21,7 @@ O desenvolvimento está dividido em duas partes principais:
 **Ferramentas:** Git e GitHub.
 
 ### 🚀 Funcionalidades Planejadas
+
 [ ] Cadastro e autenticação de usuários.
 
 [ ] CRUD de coleção pessoal de jogos (adicionar, listar, editar e remover).
@@ -29,17 +33,28 @@ O desenvolvimento está dividido em duas partes principais:
 [ ] Filtros de busca por nome ou categoria.
 
 ### 📋 Pré-requisitos para Rodar Localmente
+
 Quando a estrutura inicial estiver pronta, você precisará de:
 
-JDK 17+
+- JDK 17+
+- Flutter SDK
+- Um banco de dados instalado ou rodando via container (a definir)
+- IDE de sua preferência (VS Code, IntelliJ, Android Studio)
 
-Flutter SDK
+### Lista de API
 
-Um banco de dados instalado ou rodando via container (a definir)
+#### User
 
-IDE de sua preferência (VS Code, IntelliJ, Android Studio)
-
-### Lista de API 
+| Método | Rota | Descrição |
+|---|---|---|
+| POST | `/users` | Criar um usuário |
+| POST | `/users/authenticate` | Autenticar um usuário |
+| PUT | `/users/{uuid}` | Atualizar perfil (completo) |
+| PATCH | `/users/{uuid}` | Atualizar perfil (parcial) |
+| PATCH | `/users/{uuid}/password` | Alterar senha |
+| GET | `/users/{uuid}` | Detalhar um usuário específico |
+| GET | `/users` | Listar usuários |
+| DELETE | `/users/{uuid}` | Remover um usuário |
 
 #### UserBoardgame
 
@@ -53,6 +68,7 @@ IDE de sua preferência (VS Code, IntelliJ, Android Studio)
 | DELETE | `/user-boardgames/{uuid}` | Remover posse |
 
 #### Offer
+
 | Método | Rota | Descrição |
 |---|---|---|
 | POST | `/offers` | Criar uma oferta (a partir de um `userBoardgameId`) |
@@ -61,4 +77,3 @@ IDE de sua preferência (VS Code, IntelliJ, Android Studio)
 | GET | `/offers/{uuid}` | Detalhar uma oferta específica |
 | GET | `/offers` | Listar ofertas (query params: `?userId=&boardgameId=&status=`) |
 | DELETE | `/offers/{uuid}` | Remover oferta |
- 
