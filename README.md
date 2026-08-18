@@ -77,3 +77,32 @@ Quando a estrutura inicial estiver pronta, você precisará de:
 | GET | `/offers/{uuid}` | Detalhar uma oferta específica |
 | GET | `/offers` | Listar ofertas (query params: `?userId=&boardgameId=&status=`) |
 | DELETE | `/offers/{uuid}` | Remover oferta |
+
+#### Match
+
+
+| Método | Rota | Descrição |
+|---|---|---|
+| POST | `/matches | Criar uma partida |
+| PUT | `/matches/{uuid}` | Atualizar partida (completo) |
+| PATCH | `/matches/{uuid}` | Atualizar partida (parcial) |
+| GET | `/matches/{uuid}` | Detalhar uma partida específica |
+| GET | `/macthes` | Listar partidas (query params: `?boardgameId=`) |
+| DELETE | `/matches/{uuid}` | Remover partida |
+
+#### MatchParticipant
+
+
+| Método | Rota | Descrição |
+|---|---|---|
+| POST | `/match-participants | adicionar um user a uma partida (a partir de um matchId e UserId |
+| PUT | `/match-participants/{uuid}` | Atualizar participante (completo) |
+| PATCH | `/match-participants/{uuid}` | Atualizar participante (parcial) |
+| GET | `/match-participants/{uuid}` | Detalhar uma participante específica |
+| GET | `/macth-participants` | Listar participantes (query params: `?matchId=`) |
+| DELETE | `/match-participants/{uuid}` | Remover participante da partida |
+
+
+| DELETE | `/match-participants/{uuid}` | Remover participante da partida |
+
+
